@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free Marketing Assessment for Newborn Photographers | Grow Your Photography Studio</title>
+
+  <!-- Google Fonts: Playfair Display + Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ─── Reset & Base ─────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --gold:        #C8A967;
+      --gold-light:  #E2C98A;
+      --gold-dark:   #A8893F;
+      --cream:       #FAF6F0;
+      --cream-dark:  #F0E8DA;
+      --dark:        #1A1410;
+      --dark-warm:   #2A1F14;
+      --text:        #2C2416;
+      --text-muted:  #7A6A52;
+      --teal:        #1D4A4A;
+      --teal-light:  #2A6060;
+      --white:       #FFFFFF;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      font-size: 17px;
+      line-height: 1.75;
+      color: var(--text);
+      background: var(--white);
+      overflow-x: hidden;
+      max-width: 100%;
+    }
+
+    * {
+      max-width: 100%;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 400;
+      line-height: 1.2;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      hyphens: auto;
+    }
+
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+
+    /* ─── Navigation ───────────────────────────────────────────── */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 60px;
+      background: rgba(26, 20, 16, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(200, 169, 103, 0.15);
+      transition: all 0.3s ease;
+    }
+
+    .nav-logo img {
+      height: 44px;
+      filter: brightness(0) invert(1);
+      opacity: 0.9;
+    }
+
+    .nav-cta {
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--dark);
+      background: var(--gold);
+      padding: 11px 24px;
+      border-radius: 2px;
+      transition: background 0.2s, transform 0.15s;
+      white-space: nowrap;
+    }
+
+    .nav-cta:hover {
+      background: var(--gold-light);
+      transform: translateY(-1px);
+    }
+
+    /* ─── Containers ───────────────────────────────────────────── */
+    .container {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+
+    .container-narrow {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+
+    /* ─── Section Base ─────────────────────────────────────────── */
+    .section {
+      padding: 100px 0;
+    }
+
+    .section-label {
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    /* ─── Ornament ─────────────────────────────────────────────── */
+    .ornament {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+
+    .ornament::before,
+    .ornament::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--gold);
+      opacity: 0.4;
+    }
+
+    .ornament-diamond {
+      width: 8px;
+      height: 8px;
+      background: var(--gold);
+      transform: rotate(45deg);
+      flex-shrink: 0;
+    }
+
+    /* ─── Hero ─────────────────────────────────────────────────── */
+    .hero {
+      position: relative;
+      height: 100vh;
+      min-height: 640px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('assets/hero-bg.jpg');
+      background-size: cover;
+      background-position: center left;
+      will-change: transform;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        105deg,
+        rgba(20, 12, 6, 0.82) 0%,
+        rgba(26, 20, 14, 0.70) 45%,
+        rgba(30, 18, 10, 0.40) 75%,
+        rgba(30, 18, 10, 0.20) 100%
+      );
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 0 60px;
+      max-width: 700px;
+    }
+
+    .hero-eyebrow {
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 24px;
+      display: block;
+    }
+
+    .hero-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(42px, 5.5vw, 76px);
+      font-weight: 400;
+      line-height: 1.1;
+      color: var(--white);
+      margin-bottom: 28px;
+    }
+
+    .hero-title em {
+      font-style: italic;
+      color: var(--gold-light);
+    }
+
+    .hero-subtitle {
+      font-family: 'Inter', sans-serif;
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 1.7;
+      color: rgba(255,255,255,0.80);
+      max-width: 500px;
+      margin-bottom: 44px;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--dark);
+      background: var(--gold);
+      padding: 18px 44px;
+      border-radius: 2px;
+      transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+    }
+
+    .btn-primary:hover {
+      background: var(--gold-light);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(200, 169, 103, 0.3);
+    }
+
+    .btn-outline {
+      display: inline-block;
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border: 1px solid var(--gold);
+      padding: 17px 44px;
+      border-radius: 2px;
+      transition: all 0.2s;
+    }
+
+    .btn-outline:hover {
+      background: var(--gold);
+      color: var(--dark);
+      transform: translateY(-2px);
+    }
+
+    .hero-scroll {
+      position: absolute;
+      bottom: 40px;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .hero-scroll span {
+      font-family: 'Inter', sans-serif;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.5);
+    }
+
+    .scroll-line {
+      width: 1px;
+      height: 40px;
+      background: linear-gradient(to bottom, var(--gold), transparent);
+      animation: scrollPulse 2s ease-in-out infinite;
+    }
+
+    @keyframes scrollPulse {
+      0%, 100% { opacity: 0.4; transform: scaleY(1); }
+      50% { opacity: 1; transform: scaleY(1.1); }
+    }
+
+    /* ─── Intro Section ────────────────────────────────────────── */
+    .intro {
+      background: var(--cream);
+      padding: 100px 0;
+      text-align: center;
+    }
+
+    .intro h2 {
+      font-size: clamp(32px, 3.5vw, 52px);
+      color: var(--dark);
+      margin-bottom: 28px;
+    }
+
+    .intro h2 em {
+      font-style: italic;
+      color: var(--gold-dark);
+    }
+
+    .intro p {
+      font-size: 18px;
+      line-height: 1.8;
+      color: var(--text-muted);
+      max-width: 640px;
+      margin: 0 auto 20px;
+    }
+
+    .intro .free-badge {
+      display: inline-block;
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold-dark);
+      border: 1px solid var(--gold);
+      padding: 8px 20px;
+      border-radius: 2px;
+      margin-bottom: 40px;
+    }
+
+    /* ─── Pain Points ──────────────────────────────────────────── */
+    .pain {
+      background: var(--teal);
+      padding: 100px 0;
+    }
+
+    .pain h2 {
+      font-size: clamp(30px, 3.2vw, 48px);
+      color: var(--white);
+      margin-bottom: 16px;
+    }
+
+    .pain h2 em {
+      font-style: italic;
+      color: var(--gold-light);
+    }
+
+    .pain .lead {
+      font-size: 18px;
+      color: rgba(255,255,255,0.75);
+      margin-bottom: 60px;
+    }
+
+    .pain-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .pain-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 28px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(200, 169, 103, 0.2);
+      border-radius: 2px;
+    }
+
+    .pain-icon {
+      width: 36px;
+      height: 36px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .pain-icon svg {
+      width: 20px;
+      height: 20px;
+      stroke: var(--gold);
+      fill: none;
+      stroke-width: 1.5;
+    }
+
+    .pain-item p {
+      font-size: 16px;
+      line-height: 1.65;
+      color: rgba(255,255,255,0.80);
+    }
+
+    .pain-item p strong {
+      color: var(--white);
+      font-weight: 500;
+    }
+
+    /* ─── What We Assess ───────────────────────────────────────── */
+    .assess {
+      background: var(--cream);
+      padding: 100px 0;
+    }
+
+    .assess-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .assess-text h2 {
+      font-size: clamp(30px, 3.2vw, 48px);
+      color: var(--dark);
+      margin-bottom: 24px;
+    }
+
+    .assess-text h2 em {
+      font-style: italic;
+      color: var(--gold-dark);
+    }
+
+    .assess-text p {
+      font-size: 17px;
+      line-height: 1.8;
+      color: var(--text-muted);
+      margin-bottom: 40px;
+    }
+
+    .assess-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .assess-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      font-size: 17px;
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .assess-list li::before {
+      content: '';
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='%23C8A967' stroke-width='2'%3E%3Cpath d='M4 10l4 4 8-8'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin-top: 2px;
+    }
+
+    .assess-list li strong {
+      font-weight: 600;
+      color: var(--dark);
+    }
+
+    .assess-image {
+      position: relative;
+    }
+
+    .assess-image img {
+      width: 100%;
+      border-radius: 2px;
+      display: block;
+    }
+
+    .assess-image::before {
+      content: '';
+      position: absolute;
+      inset: -12px -12px 12px 12px;
+      border: 1px solid var(--gold);
+      opacity: 0.3;
+      border-radius: 2px;
+      z-index: 0;
+    }
+
+    .assess-image img {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ─── How It Works ─────────────────────────────────────────── */
+    .how {
+      background: var(--dark-warm);
+      padding: 100px 0;
+      text-align: center;
+    }
+
+    .how h2 {
+      font-size: clamp(30px, 3.2vw, 48px);
+      color: var(--white);
+      margin-bottom: 16px;
+    }
+
+    .how h2 em {
+      font-style: italic;
+      color: var(--gold-light);
+    }
+
+    .how .lead {
+      font-size: 18px;
+      color: rgba(255,255,255,0.65);
+      margin-bottom: 70px;
+      max-width: 560px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      position: relative;
+    }
+
+    .steps::before {
+      content: '';
+      position: absolute;
+      top: 36px;
+      left: calc(16.66% + 20px);
+      right: calc(16.66% + 20px);
+      height: 1px;
+      background: linear-gradient(to right, var(--gold), rgba(200,169,103,0.3), var(--gold));
+      opacity: 0.4;
+    }
+
+    .step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .step-number {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      border: 1px solid var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 28px;
+      color: var(--gold);
+      margin-bottom: 28px;
+      background: rgba(200, 169, 103, 0.08);
+      flex-shrink: 0;
+    }
+
+    .step h3 {
+      font-size: 20px;
+      color: var(--white);
+      margin-bottom: 14px;
+    }
+
+    .step p {
+      font-size: 15px;
+      line-height: 1.7;
+      color: rgba(255,255,255,0.65);
+    }
+
+    .step p strong {
+      color: var(--gold-light);
+      font-weight: 500;
+    }
+
+    .how-note {
+      margin-top: 60px;
+      padding: 28px 40px;
+      background: rgba(200, 169, 103, 0.08);
+      border: 1px solid rgba(200, 169, 103, 0.25);
+      border-radius: 2px;
+      display: inline-block;
+    }
+
+    .how-note p {
+      font-size: 16px;
+      color: rgba(255,255,255,0.80);
+    }
+
+    .how-note strong {
+      color: var(--gold-light);
+    }
+
+    /* ─── Social Proof Screenshots ─────────────────────────────── */
+    .social-proof {
+      background: var(--cream-dark);
+      padding: 100px 0;
+      text-align: center;
+    }
+
+    .social-proof h2 {
+      font-size: clamp(28px, 3vw, 44px);
+      color: var(--dark);
+      margin-bottom: 16px;
+    }
+
+    .social-proof h2 em {
+      font-style: italic;
+      color: var(--gold-dark);
+    }
+
+    .social-proof .lead {
+      font-size: 17px;
+      color: var(--text-muted);
+      margin-bottom: 60px;
+      max-width: 540px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .proof-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .proof-item {
+      border-radius: 2px;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(44, 36, 22, 0.12);
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+
+    .proof-item:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(44, 36, 22, 0.18);
+    }
+
+    .proof-item img {
+      width: 100%;
+      display: block;
+    }
+
+    /* ─── Testimonials ─────────────────────────────────────────── */
+    .testimonials {
+      background: var(--dark);
+      padding: 100px 0;
+      background-image: url('assets/bg-teal.jpg');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .testimonials::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(20, 12, 6, 0.82);
+    }
+
+    .testimonials .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    .testimonials h2 {
+      font-size: clamp(28px, 3vw, 44px);
+      color: var(--white);
+      margin-bottom: 16px;
+      text-align: center;
+    }
+
+    .testimonials h2 em {
+      font-style: italic;
+      color: var(--gold-light);
+    }
+
+    .testimonials .lead {
+      font-size: 17px;
+      color: rgba(255,255,255,0.65);
+      margin-bottom: 60px;
+      text-align: center;
+      max-width: 540px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .testimonial-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(200, 169, 103, 0.2);
+      border-radius: 2px;
+      padding: 36px;
+      position: relative;
+    }
+
+    .testimonial-card::before {
+      content: '\201C';
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 72px;
+      color: var(--gold);
+      opacity: 0.3;
+      position: absolute;
+      top: 16px;
+      left: 28px;
+      line-height: 1;
+    }
+
+    .testimonial-card blockquote {
+      font-size: 16px;
+      line-height: 1.75;
+      color: rgba(255,255,255,0.85);
+      margin-bottom: 24px;
+      padding-top: 20px;
+    }
+
+    .testimonial-card blockquote strong {
+      color: var(--white);
+      font-weight: 500;
+    }
+
+    .testimonial-author {
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    /* ─── Testimonial Images ───────────────────────────────────── */
+    .testimonial-images {
+      background: var(--cream);
+      padding: 80px 0;
+    }
+
+    .testimonial-images h2 {
+      font-size: clamp(26px, 2.8vw, 40px);
+      color: var(--dark);
+      margin-bottom: 16px;
+      text-align: center;
+    }
+
+    .testimonial-images h2 em {
+      font-style: italic;
+      color: var(--gold-dark);
+    }
+
+    .testimonial-images .lead {
+      font-size: 16px;
+      color: var(--text-muted);
+      margin-bottom: 48px;
+      text-align: center;
+    }
+
+    .testimonial-img-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .testimonial-img-item {
+      border-radius: 2px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(44, 36, 22, 0.1);
+    }
+
+    .testimonial-img-item img {
+      width: 100%;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .testimonial-img-item:hover img {
+      transform: scale(1.03);
+    }
+
+    /* ─── CTA Banner ───────────────────────────────────────────── */
+    .cta-banner {
+      background: var(--teal);
+      padding: 100px 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-banner::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url('assets/bg-teal.jpg') center/cover no-repeat;
+      opacity: 0.15;
+    }
+
+    .cta-banner .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    .cta-banner h2 {
+      font-size: clamp(30px, 3.5vw, 52px);
+      color: var(--white);
+      margin-bottom: 20px;
+    }
+
+    .cta-banner h2 em {
+      font-style: italic;
+      color: var(--gold-light);
+    }
+
+    .cta-banner p {
+      font-size: 18px;
+      color: rgba(255,255,255,0.75);
+      max-width: 560px;
+      margin: 0 auto 44px;
+      line-height: 1.75;
+    }
+
+    .cta-banner .spots {
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      margin-top: 20px;
+      display: block;
+    }
+
+    /* ─── Programs ─────────────────────────────────────────────── */
+    .programs {
+      background: var(--dark-warm);
+      padding: 100px 0;
+      text-align: center;
+    }
+
+    .programs h2 {
+      font-size: clamp(28px, 3vw, 44px);
+      color: var(--white);
+      margin-bottom: 16px;
+    }
+
+    .programs h2 em {
+      font-style: italic;
+      color: var(--gold-light);
+    }
+
+    .programs .lead {
+      font-size: 17px;
+      color: rgba(255,255,255,0.65);
+      margin-bottom: 60px;
+      max-width: 540px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .programs-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px;
+      align-items: center;
+    }
+
+    .program-item img {
+      max-height: 90px;
+      width: auto;
+      margin: 0 auto;
+      filter: brightness(0) invert(1);
+      opacity: 0.75;
+      transition: opacity 0.2s;
+    }
+
+    .program-item:hover img {
+      opacity: 1;
+    }
+
+    /* ─── Footer ───────────────────────────────────────────────── */
+    .footer {
+      background: var(--dark);
+      padding: 48px 0;
+      text-align: center;
+      border-top: 1px solid rgba(200, 169, 103, 0.15);
+    }
+
+    .footer-logo img {
+      height: 36px;
+      filter: brightness(0) invert(1);
+      opacity: 0.5;
+      margin: 0 auto 20px;
+    }
+
+    .footer p {
+      font-size: 13px;
+      color: rgba(255,255,255,0.35);
+      margin-bottom: 8px;
+    }
+
+    .footer a {
+      color: rgba(255,255,255,0.45);
+      font-size: 12px;
+      transition: color 0.2s;
+    }
+
+    .footer a:hover { color: var(--gold); }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      margin-top: 16px;
+      flex-wrap: wrap;
+    }
+
+    /* ─── Fade-in animation ────────────────────────────────────── */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ─── Responsive ───────────────────────────────────────────── */
+    @media (max-width: 1024px) {
+      .assess-inner { grid-template-columns: 1fr; gap: 48px; }
+      .assess-image { display: none; }
+      .proof-grid { grid-template-columns: repeat(2, 1fr); }
+      .programs-grid { grid-template-columns: repeat(2, 1fr); gap: 40px; }
+      .steps { grid-template-columns: 1fr; gap: 48px; }
+      .steps::before { display: none; }
+    }
+
+    @media (max-width: 768px) {
+      .nav { padding: 16px 20px; }
+      .nav-logo img { height: 36px; }
+      .nav-cta { font-size: 10px; padding: 9px 16px; letter-spacing: 0.08em; }
+
+      .hero-content { padding: 0 20px; max-width: 100%; }
+      .hero-title { font-size: clamp(36px, 18vw, 64px); }
+      .hero-subtitle { font-size: 15px; }
+
+      .container, .container-narrow { padding: 0 20px; }
+      .section { padding: 70px 0; }
+
+      .pain-grid { grid-template-columns: 1fr; }
+      .testimonials-grid { grid-template-columns: 1fr; }
+      .proof-grid { grid-template-columns: repeat(2, 1fr); }
+      .programs-grid { grid-template-columns: repeat(2, 1fr); gap: 28px; }
+      .testimonial-img-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+
+      .how-note { padding: 20px; }
+      .how-note p { font-size: 14px; }
+
+      .fade-in { opacity: 1; transform: none; }
+    }
+
+    @media (max-width: 480px) {
+      .hero-title { font-size: 18vw; }
+      .proof-grid { grid-template-columns: 1fr; }
+      .programs-grid { grid-template-columns: 1fr; }
+      .fade-in { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ─── Navigation ──────────────────────────────────────────── -->
+  <nav class="nav" id="nav">
+    <a href="https://www.growyourphotographystudio.com" class="nav-logo">
+      <img src="assets/logo.png" alt="Grow Your Photography Studio" />
+    </a>
+    <a href="#assessment-form" class="nav-cta">
+      Request Your Free Assessment
+    </a>
+  </nav>
+
+  <!-- ─── Hero ────────────────────────────────────────────────── -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-eyebrow">Welcome to our free</span>
+      <h1 class="hero-title">
+        Business &amp;<br><em>Marketing<br>Assessment</em>
+      </h1>
+      <p class="hero-subtitle">
+        For Newborn Photographers
+      </p>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ─── Intro ────────────────────────────────────────────────── -->
+  <section class="intro section">
+    <div class="container-narrow">
+      <div class="ornament"><div class="ornament-diamond"></div></div>
+      <span class="section-label">The Photography Industry Is Changing</span>
+      <h2 class="fade-in">
+        The way you <em>grow your business</em> should too.
+      </h2>
+      <p class="fade-in">
+        You've read it in Facebook groups, seen it yourself: right now, many photographers across the UK are feeling it.
+      </p>
+      <p class="fade-in">
+        Enquiries are <strong>quieter, conversions are difficult</strong> and clients seem to be <strong>shopping around more than ever.</strong>
+      </p>
+      <p class="fade-in">
+        Marketing strategies that worked two years ago are just not cutting through anymore.
+      </p>
+      <p class="fade-in">
+        Not because the photography industry is declining, but because the <strong>landscape is shifting</strong> beneath all of us.
+      </p>
+      <p class="fade-in">
+        But here's the truth: growth is still possible and, for many photographers, <strong>bookings are still coming in.</strong>
+      </p>
+      <p class="fade-in">
+        Beautiful, <strong>sustainable</strong> photography businesses are still being built, just in different ways than before.
+      </p>
+      <p class="fade-in">
+        And the truth? <em>You don't need to spend every single waking hour creating social media content,</em> or slash your prices: you need a strategy that actually <em><strong>fits today's market</strong></em>... and <strong>your</strong> version of success.
+      </p>
+      <p class="fade-in">
+        And that's exactly what our free Business &amp; Marketing Assessment is here for.
+      </p>
+    </div>
+  </section>
+
+  <!-- ─── First Testimonial ──────────────────────────────────────── -->
+  <section class="pain section">
+    <div class="container-narrow" style="text-align:center;">
+      <blockquote class="fade-in" style="font-family:'Playfair Display',Georgia,serif;font-style:italic;font-size:clamp(18px,2.5vw,26px);line-height:1.6;color:var(--text);max-width:700px;margin:0 auto;">
+        "Been in business for 13 years and I have just had the best month ever.
+        <br /><br />
+        It's not a fluke.
+        <br /><br />
+        Giulia has a witch... a very good witch!"
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ─── What You'll Get ──────────────────────────────────────────── -->
+  <section class="assess section" style="background:var(--cream-dark);">
+    <div class="container-narrow">
+      <div class="ornament"><div class="ornament-diamond"></div></div>
+      <span class="section-label">100% Free</span>
+      <h2 class="fade-in">What You'll Get <em>For Free</em></h2>
+      <ul class="assess-list fade-in" style="max-width:600px;margin:2rem auto;">
+        <li class="fade-in"><span>Three 1 to 1 online calls (30 minutes each)</span></li>
+        <li class="fade-in"><span>A personalised 13-page assessment covering pricing, marketing, processes and mindset</span></li>
+        <li class="fade-in"><span>Workbook</span></li>
+        <li class="fade-in"><span>A custom <strong>action plan</strong> to help you book more clients and build a sustainable business</span></li>
+      </ul>
+      <p class="fade-in" style="text-align:center;"><strong>It's 100% free</strong> and there's no obligation to buy anything.<br />Limited to 3 spots each month.</p>
+    </div>
+  </section>
+
+  <!-- ─── Georgina Testimonial ──────────────────────────────────────── -->
+  <section class="pain section">
+    <div class="container-narrow" style="text-align:center;">
+      <blockquote class="fade-in" style="font-family:'Playfair Display',Georgia,serif;font-style:italic;font-size:clamp(16px,2vw,20px);line-height:1.8;color:var(--text);max-width:700px;margin:0 auto;">
+        "After that first call, the real work began!! Gi gave me some homework questions that forced me to take a deep look at where my business was, where I wanted it to go and what I needed to do to make it happen.
+        <br /><br />
+        It wasn't just surface-level stuff; it really made me stop and think. Then, in our follow-up calls, we dug even deeper into strategies and actionable steps - and let me tell you, she knows her stuff that's for sure!"
+      </blockquote>
+      <p class="fade-in" style="margin-top:1.5rem;font-weight:600;letter-spacing:0.08em;">- Georgina</p>
+    </div>
+  </section>
+
+  <!-- ─── What We Assess ──────────────────────────────────────── -->
+  <section class="assess section">
+    <div class="container">
+      <div class="assess-inner">
+        <div class="assess-text">
+          <div class="ornament"><div class="ornament-diamond"></div></div>
+          <span class="section-label">What We'll Assess</span>
+          <h2 class="fade-in">What We'll <em>Assess</em></h2>
+          <ul class="assess-list">
+            <li class="fade-in"><span>The <strong>foundations</strong> of your business</span></li>
+            <li class="fade-in"><span>Your <strong>products and pricing</strong></span></li>
+            <li class="fade-in"><span>Your <strong>marketing and advertising</strong></span></li>
+            <li class="fade-in"><span>Your <strong>processes</strong> (tracking, communications, sales)</span></li>
+            <li class="fade-in"><span>Your <strong>mindset</strong></span></li>
+          </ul>
+        </div>
+        <div class="assess-image fade-in">
+          <img src="assets/assessment-hero.jpg" alt="Marketing Assessment for Photographers" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── How It Works ────────────────────────────────────────── -->
+  <section class="how section">
+    <div class="container">
+      <div class="ornament" style="justify-content:center;"><div class="ornament-diamond" style="background:#C8A967;"></div></div>
+      <span class="section-label" style="text-align:center;display:block;">How It Works</span>
+      <h2 class="fade-in">How It <em>Works</em></h2>
+      <p class="lead fade-in"><strong>It's 100% free</strong> and there's no obligation to buy anything. Limited to 3 spots each month.</p>
+      <div class="steps">
+        <div class="step fade-in">
+          <div class="step-number">1</div>
+          <h3>Request your <strong>free assessment</strong></h3>
+          <p>Click on the button below and fill out our application form to help us understand if you qualify.</p>
+        </div>
+        <div class="step fade-in">
+          <div class="step-number">2</div>
+          <h3>Get your <strong>calls and assessment</strong></h3>
+          <p>If selected, we'll contact you to book you in for the calls and assessment! During the calls, you'll get <strong>one to one</strong> guidance and a <strong>personalised action plan.</strong></p>
+        </div>
+        <div class="step fade-in">
+          <div class="step-number">3</div>
+          <h3>Step-by-step plan</h3>
+          <p>You'll leave the assessment with a step-by-step plan of action you can implement on your own!</p>
+        </div>
+      </div>
+      <div class="how-note fade-in">
+        <p><strong>It's 100% free</strong> and there's no obligation to buy anything. Limited to 3 spots each month.</p>
+      </div>
+      <br /><br />
+      <a href="https://calendly.com/growyourphotographystudio/30min" target="_blank" rel="noopener" class="btn-outline fade-in">
+        Request Your Free Assessment
+      </a>
+    </div>
+  </section>
+
+  <!-- ─── Social Proof Screenshots ────────────────────────────── -->
+  <section class="social-proof section">
+    <div class="container">
+      <div class="ornament" style="justify-content:center;"><div class="ornament-diamond"></div></div>
+      <span class="section-label" style="text-align:center;display:block;">Why This Matters</span>
+      <h2 class="fade-in">Why This <em>Matters</em></h2>
+      <p class="lead fade-in"><strong>Imagine your business as a patient.</strong></p>
+      <p class="lead fade-in">Right now, that patient might be showing symptoms: lack of bookings, low profit, or underwhelming sales - these are the visible signs that <strong>something deeper isn't working as it should</strong>.</p>
+      <p class="lead fade-in"><strong>But without an accurate diagnosis, it's impossible to find a cure that works in the long term.</strong></p>
+      <p class="lead fade-in">The goal of our assessment is to <strong>empower you with the knowledge and tools</strong> necessary to:</p>
+      <ul class="assess-list" style="max-width:600px;margin:0 auto 2rem;">
+        <li class="fade-in"><span>Assess your <strong>pricing, marketing, and sales process</strong></span></li>
+        <li class="fade-in"><span>Identify exactly <strong>which areas need</strong> improvement and why</span></li>
+        <li class="fade-in"><span>Create an actionable <strong>step by step plan to take your business</strong> to the next level</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ─── Testimonial Images ───────────────────────────────────── -->
+  <section class="testimonial-images section">
+    <div class="container">
+      <div class="ornament" style="justify-content:center;"><div class="ornament-diamond"></div></div>
+      <h2 class="fade-in">Can We Really <em>Help You?</em></h2>
+      <p class="lead fade-in">Here's what photographers who've worked with us have to say.</p>
+      <div class="testimonial-img-grid">
+        <div class="testimonial-img-item fade-in"><img src="assets/review-1.jpg" alt="Photographer success story" /></div>
+        <div class="testimonial-img-item fade-in"><img src="assets/review-2.jpg" alt="Photographer success story" /></div>
+        <div class="testimonial-img-item fade-in"><img src="assets/review-3.jpg" alt="Photographer success story" /></div>
+        <div class="testimonial-img-item fade-in"><img src="assets/review-4.jpg" alt="Photographer success story" /></div>
+        <div class="testimonial-img-item fade-in"><img src="assets/review-5.png" alt="Photographer success story" /></div>
+        <div class="testimonial-img-item fade-in"><img src="assets/review-6.png" alt="Photographer success story" /></div>
+        <div class="testimonial-img-item fade-in"><img src="assets/review-7.png" alt="Photographer success story" /></div>
+        <div class="testimonial-img-item fade-in"><img src="assets/review-8.png" alt="Photographer success story" /></div>
+        <div class="testimonial-img-item fade-in"><img src="assets/review-9.png" alt="Photographer success story" /></div>
+        <div class="testimonial-img-item fade-in"><img src="assets/review-10.png" alt="Photographer success story" /></div>
+        <div class="testimonial-img-item fade-in"><img src="assets/review-11.png" alt="Photographer success story" /></div>
+        <div class="testimonial-img-item fade-in"><img src="assets/review-12.png" alt="Photographer success story" /></div>
+        <div class="testimonial-img-item fade-in"><img src="assets/review-13.png" alt="Photographer success story" /></div>
+        <div class="testimonial-img-item fade-in"><img src="assets/review-14.png" alt="Photographer success story" /></div>
+        <div class="testimonial-img-item fade-in"><img src="assets/review-15.png" alt="Photographer success story" /></div>
+        <div class="testimonial-img-item fade-in"><img src="assets/review-16.png" alt="Photographer success story" /></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CTA Banner ───────────────────────────────────────────── -->
+  <section class="cta-banner" id="assessment-form">
+    <div class="container">
+      <div class="ornament" style="justify-content:center;"><div class="ornament-diamond" style="background:#C8A967;"></div></div>
+      <h2 class="fade-in">Request Your <em>Free Assessment</em></h2>
+      <p class="fade-in">
+        <strong>It's 100% free</strong> and there's no obligation to buy anything. Limited to 3 spots each month.
+      </p>
+      <div class="kartra_optin_containera684eceee76fc522773286a895bc8436"></div>
+      <script src="https://app.kartra.com/optin/Q8VPo0Z5KaXc"></script>
+      <span class="spots fade-in">Limited to 3 spots each month</span>
+    </div>
+  </section>
+
+  <!-- ─── Our Other Programs ──────────────────────────────────── -->
+  <section class="programs section">
+    <div class="container">
+      <div class="ornament" style="justify-content:center;"><div class="ornament-diamond" style="background:#C8A967;"></div></div>
+      <h2 class="fade-in">Our Other <em>Programs</em></h2>
+      <div class="programs-grid">
+        <div class="program-item fade-in">
+          <img src="assets/prog-mastermind.png" alt="Marketing Mastermind for Newborn Photographers" />
+        </div>
+        <div class="program-item fade-in">
+          <img src="assets/prog-pricing.png" alt="Perfect Pricing Blueprint for Newborn Photographers" />
+        </div>
+        <div class="program-item fade-in">
+          <img src="assets/prog-inner-circle.png" alt="The Inner Circle for Newborn Photographers" />
+        </div>
+        <div class="program-item fade-in">
+          <img src="assets/prog-pathway.png" alt="Pathway to Creation" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Footer ───────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-logo">
+        <img src="assets/logo.png" alt="Grow Your Photography Studio" />
+      </div>
+      <p>Hands-on marketing coaching for newborn photographers in the UK.</p>
+      <p><a href="mailto:info@growyourstudio.photography">info@growyourstudio.photography</a></p>
+      <div class="footer-links">
+        <a href="https://www.growyourphotographystudio.com/privacy-policy">Privacy Policy</a>
+        <a href="https://www.growyourphotographystudio.com/terms-of-service">Terms of Service</a>
+        <a href="mailto:info@growyourstudio.photography">Contact</a>
+      </div>
+      <br />
+      <p style="font-size:11px; color:rgba(255,255,255,0.2);">&copy; 2025 Grow Your Photography Studio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // ─── Parallax on hero bg (desktop only) ─────────────────────
+    const heroBg = document.getElementById('heroBg');
+    const isMobile = window.innerWidth <= 768;
+
+    if (!isMobile) {
+      window.addEventListener('scroll', () => {
+        const scrollY = window.scrollY;
+        heroBg.style.transform = `translateY(${scrollY * 0.3}px) scale(1.04)`;
+      }, { passive: true });
+    }
+
+    // ─── Sticky nav scroll effect ────────────────────────────────
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 60) {
+        nav.style.padding = isMobile ? '12px 20px' : '12px 60px';
+        nav.style.background = 'rgba(26, 20, 16, 0.97)';
+      } else {
+        nav.style.padding = isMobile ? '16px 20px' : '20px 60px';
+        nav.style.background = 'rgba(26, 20, 16, 0.85)';
+      }
+    }, { passive: true });
+
+    // ─── Fade-in on scroll (desktop only) ───────────────────────
+    if (!isMobile) {
+      const fadeEls = document.querySelectorAll('.fade-in');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+
+      fadeEls.forEach(el => observer.observe(el));
+    } else {
+      // On mobile, make everything visible immediately
+      document.querySelectorAll('.fade-in').forEach(el => {
+        el.classList.add('visible');
+      });
+    }
+  </script>
+</body>
+</html>
